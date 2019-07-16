@@ -1,0 +1,215 @@
+.record {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Nunito Sans";
+}
+
+.record .chart {
+  margin: 1rem 0;
+}
+
+.record .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(256, 256, 256, 0.05);
+}
+
+.record .nav a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+.record .nav a:hover {
+  opacity: 1;
+}
+
+.record .nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+
+  color: #fff;
+}
+
+.record .nav .wrapper h3 {
+  font-family: 'Nunito Sans';
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.record .nav .wrapper h4 {
+  font-family: 'Nunito Sans';
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0;
+}
+
+.record .nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.record .nav .right h4 {
+  padding: 0.5rem 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.record .nav .right h4.outlined {
+  margin-right: 0;
+}
+
+.record .nav .right a:hover h4 {
+  border-bottom: 2px solid #fff;
+}
+
+.record .nav .right a {
+  margin-right: 1.5rem;
+}
+
+.record .nav .right:last-child {
+  margin-right: 0;
+}
+
+.record .container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 500px;
+}
+
+.record .container h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.record .tell {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 20px;
+  font-family: "Lato";
+  font-size: 1.2em;
+  font-weight: 300;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.record .tell:hover {
+  opacity: 1;
+}
+
+.record .card {
+  background-color: white;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 15px 20px;
+  color: #505050;
+  margin-bottom: 1em;
+  opacity: .7;
+  transition: 0.2s ease-in-out;
+}
+
+.record .card.new {
+  opacity: 1;
+}
+
+.record .card:hover {
+  opacity: 1;
+}
+
+.record .card:hover .positive {
+  color: rgba(0, 0, 255, .6);
+}
+
+.record .card:hover .negative {
+  color: rgba(255, 0, 0, .6);
+}
+
+.record .date {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.record .score {
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.record .summary {
+  display: flex;
+  align-items: center;
+}
+
+.record .summary p {
+  padding: 0;
+  margin: 0;
+}
+
+.record .summary span {
+  display: inline-block;
+}
+
+.record .input {
+  flex: 1;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  word-break: break-word;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.record .listening {
+  flex-shrink: 0;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 4rem;
+  background-color: #6BA5D5;
+  color: white;
+  text-align: center;
+  font-size: 1.75em;
+  line-height: 4rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.record .listening.stop {
+  background: red;
+}
+
+.record .listening:active {
+  transform: scale(.85);
+}

@@ -1,0 +1,143 @@
+.signup {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #121821;
+
+  color: #fff;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.signup a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.signup .ghost.button {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-align: center;
+
+  background: #fff;
+  border: 0;
+  color: #051a30
+}
+
+.signup h1 {
+  font-weight: 300;
+  font-family: 'Nunito Sans';
+  font-size: 4em;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 2rem;
+}
+
+.signup .grid {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.signup .grid .left {
+  display: inline-block;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signup .grid .left h2 {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-family: 'Nunito Sans';
+  font-size: 2em;
+}
+
+.signup .grid .left p {
+  padding-right: 1rem;
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.signup .grid .left h3:last-child {
+  margin-bottom: 0;
+}
+
+.signup .grid .right {
+  display: inline-block;
+  width: 49%;
+}
+
+.signup form {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.signup form input {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 1.25em;
+
+  outline: none;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+
+  color: #6ba5d5;
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+.signup form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.signup form input::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.signup form input:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.signup form input:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.signup form input:last-child {
+  margin-bottom: 0px;
+}
+
+.signup form input:focus {
+  opacity: 1;
+}
