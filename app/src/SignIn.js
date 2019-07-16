@@ -23,8 +23,6 @@ export default class SignIn extends Component {
   }
 
   handleSubmit = (e) => {
-    console.log(this.state.user);
-    console.log(this.state.password);
     var registration = {
       method: 'POST',
       headers: {
@@ -39,7 +37,6 @@ export default class SignIn extends Component {
           })
     };
     fetch('/login', registration).then(()=>{
-        console.log('then!');
         window.location='/record'
         return;
     });

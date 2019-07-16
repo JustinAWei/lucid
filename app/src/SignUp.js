@@ -16,8 +16,6 @@ export default class SignUp extends Component {
   }
 
   handleSubmit = (e) => {
-    console.log(this.state.user);
-    console.log(this.state.password);
     var registration = {
       method: 'POST',
       headers: {
@@ -32,7 +30,6 @@ export default class SignUp extends Component {
     };
 
     fetch('/register', registration).then(()=>{
-        console.log('then!');
         window.location='/signin'
         return;
     });
@@ -41,17 +38,14 @@ export default class SignUp extends Component {
 
   handleUserChange = (event) => {
     this.setState({user: event.target.value});
-    console.log(this.state);
   }
 
   handlePassChange = (event) => {
     this.setState({password: event.target.value});
-    console.log(this.state);
   }
 
   handleConfirmPassChange = (event) => {
     this.setState({confirmpassword: event.target.value});
-    console.log(this.state);
   }
 
   render() {

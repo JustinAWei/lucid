@@ -32,12 +32,10 @@ class Record extends Component {
   }
 
   componentDidMount() {
-      console.log('componentDidMount');
     this.props.recognition.lang = 'en-US';
   }
 
   startListening() {
-      console.log('startListening');
     this.props.resetTranscript();
     this.props.startListening();
     this.setState({
@@ -47,7 +45,6 @@ class Record extends Component {
 
   submit(dreamtext) {
     this.setState({ writing: false })
-    console.log('sending dreamtext', dreamtext);
     fetch('/dream', {
       method: 'POST',
       headers: {
@@ -67,7 +64,6 @@ class Record extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps');
     if (this.state.started) {
       this.setState({ summary: nextProps.transcript });
       if (/finish$/i.test(nextProps.transcript)) {
@@ -91,7 +87,6 @@ class Record extends Component {
   }
 
   clickOutside = () => {
-    console.log('clickOutside');
     if (this.state.writing) {
       this.setState({
         writing: false
@@ -100,7 +95,6 @@ class Record extends Component {
   }
 
   clickInside = (e) => {
-    console.log('clickInside');
     e.stopPropagation();
   }
 
@@ -109,7 +103,6 @@ class Record extends Component {
   }
 
   render() {
-    console.log('render');
     const { writing, summary, date } = this.state;
     const { stopListening, listening, browserSupportsSpeechRecognition } = this.props;
 
